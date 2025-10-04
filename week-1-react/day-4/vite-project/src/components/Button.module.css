@@ -1,0 +1,28 @@
+.button{
+    background-color: red;
+    color: black;
+    border: no  ;
+    padding: 10px 20px;
+    border-Radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3 ease;
+}
+.button:hover{
+    background-color: white;
+}
+
+.primary{
+    background-color: blue;
+    color: black;
+    border: no  ;
+    padding: 10px 20px;
+    border-Radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3 ease;
+}
+
+.primary:hover{
+    background-color: white;
+}

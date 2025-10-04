@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: black;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  gap: 50px;
+}
+.container:hover{
+  background-color: #ddd;
+}
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.image{
+  width: 120px;
+  height: auto;
+  
+}
