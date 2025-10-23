@@ -9,7 +9,7 @@ export interface Profile {
   favoriteUma: string[];
   achievements: string[];
   contact: string;
-  image: string; // hanya URL
+  image: string;
 }
 
 export function useProfile() {

@@ -1,4 +1,3 @@
-// src/auth/AuthContext.tsx
 import React, { createContext, useContext, useMemo, useState } from "react";
 
 type User = {
@@ -8,7 +7,7 @@ type User = {
 
 type AuthState = {
   user: User | null;
-  token: string | null; // in-memory only
+  token: string | null; 
 };
 
 type AuthContextValue = {
@@ -24,14 +23,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<AuthState>({ user: null, token: null });
   const [loading, setLoading] = useState(false);
 
-  // login bebas: terima username & password apa saja -> langsung set user
+  
   const login = async (username: string, _password: string) => {
     setLoading(true);
     try {
-      // langsung sukses: buat user id dari timestamp untuk uniqueness
+
       const user: User = { id: Date.now(), username };
       const token = "inmemory-token-" + user.id;
-      // sedikit delay supaya UX tidak terlalu instant (opsional)
+   
       await new Promise((r) => setTimeout(r, 250));
       setState({ user, token });
     } finally {

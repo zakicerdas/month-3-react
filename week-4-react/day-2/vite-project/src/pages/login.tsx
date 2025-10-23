@@ -14,13 +14,12 @@ export default function LoginPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // login bebas: terima apa saja
+
     try {
       await login(username, password);
       navigate(from, { replace: true });
     } catch {
-      // tidak akan terjadi karena login selalu sukses,
-      // tetapi tetap tangani jika implementasi berubah nanti
+    
     }
   };
 
